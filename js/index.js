@@ -5,12 +5,12 @@
 // let year = +prompt('В каком году вы родились?')
 // alert(`${currentYear - year}`)
 
-// let suqre = +prompt('введите длину стороны квадрата')
-// alert(`${suqre*4}`)
+// let suqare = +prompt('введите длину стороны квадрата')
+// alert(`${suaqre*4}`)
 
 // let circle = +prompt('введите длину радиус окружности')
 // const pi = 3.14;
-// alert(`${pi * (circle ** 2)}`)
+// alert(`${pi * circle ** 2}`)
 
 // let km = +prompt('расстояние между городами')
 // let h = +prompt('время')
