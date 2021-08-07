@@ -74,7 +74,6 @@
 
 let a = +prompt('Введите доллары');
 let b = prompt('вылюта:EUR, UAN, AZN');
-
 switch (b) {
     case 'EUR':
         alert(евро`${a * 0.85}`)
