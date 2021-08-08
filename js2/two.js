@@ -123,34 +123,34 @@
 //     alert(`${0} баллов`)
 // }
 
-let day = +prompt('день');
-let mon = +prompt('месяц');
-let year = +prompt('год');
-let resDay = day + 1;
-let resMon = mon + 1;
-let resYear = year + 1;
-let leap = year % 400 == 0 || year % 4 == 0;
-if (day == 31 && mon == 12) {
-    alert(`${day / day}. ${mon / 12}. ${resYear}`);
-}
-else if (day === 31) {
-    alert(`${day / day}.${resMon}. ${year}`)
-}
-else if (day >= 28 && mon === 2) {
-    alert(`${day / day}.${resMon}. ${year}`)
-}
-else if (day === 30 && mon === 4) {
-    alert(`${day / day}.${resMon}. ${year}`)
-}
-else if (day === 30 && mon === 6) {
-    alert(`${day / day}.${resMon}. ${year}`)
-}
-else if (day === 30 && mon === 9) {
-    alert(`${day / day}.${resMon}. ${year}`)
-}
-else if (day === 30 && mon === 11) {
-    alert(`${day / day}.${resMon}. ${year}`)
-}
-else {
-    alert(`${resDay}.${mon}.${year} `)
-}
+// let day = +prompt('день');
+// let mon = +prompt('месяц');
+// let year = +prompt('год');
+// let resDay = day + 1;
+// let resMon = mon + 1;
+// let resYear = year + 1;
+// let leap = year % 400 == 0 || year % 4 == 0;
+// if (day == 31 && mon == 12) {
+//     alert(`${day / day}. ${mon / 12}. ${resYear}`);
+// }
+// else if (day === 31) {
+//     alert(`${day / day}.${resMon}. ${year}`)
+// }
+// else if (day >= 28 && mon === 2) {
+//     alert(`${day / day}.${resMon}. ${year}`)
+// }
+// else if (day === 30 && mon === 4) {
+//     alert(`${day / day}.${resMon}. ${year}`)
+// }
+// else if (day === 30 && mon === 6) {
+//     alert(`${day / day}.${resMon}. ${year}`)
+// }
+// else if (day === 30 && mon === 9) {
+//     alert(`${day / day}.${resMon}. ${year}`)
+// }
+// else if (day === 30 && mon === 11) {
+//     alert(`${day / day}.${resMon}. ${year}`)
+// }
+// else {
+//     alert(`${resDay}.${mon}.${year} `)
+// }
