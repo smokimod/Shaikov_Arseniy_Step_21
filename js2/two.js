@@ -57,10 +57,10 @@
 
 // let year = +prompt('Введите год');
 // if (year % 400 == 0 || year % 4 == 0 && year % 4 != 100) {
-//     alert('весекотый год')
+//     alert('високосный год')
 // }
 // else {
-//     alert('невесокосный год')
+//     alert('невисокосный год')
 // }
 
 // let a = +prompt('Введите пятизначное число');
@@ -72,16 +72,85 @@
 // let b = (num1 === num5 || num1 === num5 && num2 === num4) ? 'Палинром' : 'не Палиндром';
 // alert(b)
 
-let a = +prompt('Введите доллары');
-let b = prompt('вылюта:EUR, UAN, AZN');
-switch (b) {
-    case 'EUR':
-        alert(евро`${a * 0.85}`)
-        break;
-    case '':
-        alert(тэнгэ`${a * 1.7}`)
-        break;
-    case '':
-        alert(юани`${a * 26.82}`)
-        break;
+// let a = +prompt('Введите доллары');
+// let b = prompt('вылюта:EUR, UAN, AZN');
+// switch (b) {
+//     case 'EUR':
+//         alert(`евро:${a * 0.85}`)
+//         break;
+//     case 'AZN':
+//         alert(`тэнгэ:${a * 1.7}`)
+//         break;
+//     case 'UAN':
+//         alert(`юани:${a * 26.82}`)
+//         break;
+// }
+
+// let a = +prompt('Введите сумму');
+// switch (true) {
+//     case a >= 200 || a <= 300:
+//         alert(`${(a - (a * 0.3)}`);
+//         break;
+
+//     case a >= 300 || a <= 500:
+//         alert(`${(a - (a * 0.5)}`);
+//         break;
+//     case a >= 500:
+//         alert(`${(a - (a * 0.7)}`);
+//         break;
+// }
+
+// let p = +prompt('периметр квадрата');
+// let a = +prompt('длина окружности');
+// let rad = a / 2;
+// let result = p / rad
+// let c = (result != 0) ? `Радиус окружности равен: ${result}. Круг вместился` : 'Неа';
+// alert(c);
+
+// let q1 = +prompt('Сколько будет 2-2? Ответы: 0, 2, 4.');
+// let q2 = +prompt('Сколько будет 6-4? Ответы: 0, 2, 4');
+// let q3 = +prompt('Сколько будет 8-4? Ответы: 0, 2, 4');
+// if (q1 === 0 && q2 === 2 && q3 === 4) {
+//     alert(`${6} баллов`)
+// }
+// else if (q1 === 0 && q2 === 2 || q1 === 0 && q3 === 4 || q2 === 2 && q3 === 4) {
+//     alert(`${4} баллов`)
+// }
+// else if (q1 === 0 || q2 === 2 || q3 === 4) {
+//     alert(`${2} балла`)
+// }
+// else {
+//     alert(`${0} баллов`)
+// }
+
+let day = +prompt('день');
+let mon = +prompt('месяц');
+let year = +prompt('год');
+let resDay = day + 1;
+let resMon = mon + 1;
+let resYear = year + 1;
+let leap = year % 400 == 0 || year % 4 == 0;
+if (day == 31 && mon == 12) {
+    alert(`${day / day}. ${mon / 12}. ${resYear}`);
+}
+else if (day === 31) {
+    alert(`${day / day}.${resMon}. ${year}`)
+}
+else if (day >= 28 && mon === 2) {
+    alert(`${day / day}.${resMon}. ${year}`)
+}
+else if (day === 30 && mon === 4) {
+    alert(`${day / day}.${resMon}. ${year}`)
+}
+else if (day === 30 && mon === 6) {
+    alert(`${day / day}.${resMon}. ${year}`)
+}
+else if (day === 30 && mon === 9) {
+    alert(`${day / day}.${resMon}. ${year}`)
+}
+else if (day === 30 && mon === 11) {
+    alert(`${day / day}.${resMon}. ${year}`)
+}
+else {
+    alert(`${resDay}.${mon}.${year} `)
 }
