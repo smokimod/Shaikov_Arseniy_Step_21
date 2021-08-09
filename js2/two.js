@@ -123,34 +123,34 @@
 //     alert(`${0} баллов`)
 // }
 
-// let day = +prompt('день');
-// let mon = +prompt('месяц');
-// let year = +prompt('год');
-// let resDay = day + 1;
-// let resMon = mon + 1;
-// let resYear = year + 1;
-// let leap = year % 400 == 0 || year % 4 == 0;
-// if (day == 31 && mon == 12) {
-//     alert(`${day / day}. ${mon / 12}. ${resYear}`);
+let day = +prompt('день');
+let mon = +prompt('месяц');
+let year = +prompt('год');
+let resDay = day + 1;
+let resMon = mon + 1;
+let resYear = year + 1;
+if (day == 31 && mon == 12 && year === year) {
+    alert(`${'1'}. ${'1'}. ${resYear}`);
+}
+else if (day === 31 && mon === 1 || mon === 3 || mon === 5 || mon === 7 || mon === 8 || mon === 10) {
+    alert(`${day / day}.${resMon}. ${year}`);
+}
+else if (day < 31 && mon === 1 || mon === 3 || mon === 5 || mon === 7 || mon === 8 || mon === 10) {
+    alert(`${resDay}.${mon}. ${year}`);
+}
+else if (day === 30 && mon === 11 || mon === 4 || mon === 6 || mon === 9) {
+    alert(`${day / day}.${resMon}. ${year}`);
+}
+else if (mon === 11 || mon === 4 || mon === 6 || mon === 9 && day < 30) {
+    alert(`${day + 1}.${mon}. ${year}`);
+}
+
+// else if (day === 29 && mon === 2 && year % 400 === 0 || year % 4 === 0 && year % 100 != 0) {
+//     alert(`1.${resMon}. ${year}`);
 // }
-// else if (day === 31) {
-//     alert(`${day / day}.${resMon}. ${year}`)
+// else if (day <= 28 && mon === 2 && year % 400 === 0 || year % 4 === 0 && year % 100 != 0) {
+//     alert(`${resDay}.${mon}. ${year}`);
 // }
-// else if (day >= 28 && mon === 2) {
-//     alert(`${day / day}.${resMon}. ${year}`)
-// }
-// else if (day === 30 && mon === 4) {
-//     alert(`${day / day}.${resMon}. ${year}`)
-// }
-// else if (day === 30 && mon === 6) {
-//     alert(`${day / day}.${resMon}. ${year}`)
-// }
-// else if (day === 30 && mon === 9) {
-//     alert(`${day / day}.${resMon}. ${year}`)
-// }
-// else if (day === 30 && mon === 11) {
-//     alert(`${day / day}.${resMon}. ${year}`)
-// }
-// else {
-//     alert(`${resDay}.${mon}.${year} `)
-// }
+
+
+
