@@ -129,28 +129,37 @@ let year = +prompt('год');
 let resDay = day + 1;
 let resMon = mon + 1;
 let resYear = year + 1;
-if (day == 31 && mon == 12 && year === year) {
-    alert(`${'1'}. ${'1'}. ${resYear}`);
+if (mon === 1 || mon === 3 || mon === 5 || mon === 7 || mon === 8 || mon === 10) {
+    if (day === 31) {
+        alert(`${day / day}.${resMon}.${year}`)
+    }
+    else if (day < 31) {
+        alert(`${resDay}.${mon}.${year}`)
+    }
 }
-else if (day === 31 && mon === 1 || mon === 3 || mon === 5 || mon === 7 || mon === 8 || mon === 10) {
-    alert(`${day / day}.${resMon}. ${year}`);
+if (mon === 12 && day === 31) {
+    alert(`${day / day}.${mon / mon}.${resYear}`)
 }
-else if (day < 31 && mon === 1 || mon === 3 || mon === 5 || mon === 7 || mon === 8 || mon === 10) {
-    alert(`${resDay}.${mon}. ${year}`);
+if (mon === 4 || mon === 6 || mon === 9 || mon === 11) {
+    if (day === 30) {
+        alert(`${day / day}.${resMon}.${year}`)
+    }
+    else if (day < 30) {
+        alert(`${resDay}.${mon}.${year}`)
+    }
 }
-else if (day === 30 && mon === 11 || mon === 4 || mon === 6 || mon === 9) {
-    alert(`${day / day}.${resMon}. ${year}`);
+if (mon === 2) {
+    if (day === 29) {
+        if (year % 400 === 0 || year % 4 === 0 && year % 100 != 0) {
+            alert(`${day / day}.${resMon}.${year}`)
+        }
+    } else {
+        alert(`В високосный: ${resDay}.${mon}.${year}`)
+    }
 }
-else if (mon === 11 || mon === 4 || mon === 6 || mon === 9 && day < 30) {
-    alert(`${day + 1}.${mon}. ${year}`);
+if (mon === 2) {
+    if (day === 28) {
+        alert(`Не в високосный: ${day / day}.${resMon}.${year}`)
+    }
 }
-
-// else if (day === 29 && mon === 2 && year % 400 === 0 || year % 4 === 0 && year % 100 != 0) {
-//     alert(`1.${resMon}. ${year}`);
-// }
-// else if (day <= 28 && mon === 2 && year % 400 === 0 || year % 4 === 0 && year % 100 != 0) {
-//     alert(`${resDay}.${mon}. ${year}`);
-// }
-
-
 
