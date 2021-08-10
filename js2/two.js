@@ -107,59 +107,66 @@
 // let c = (result != 0) ? `Радиус окружности равен: ${result}. Круг вместился` : 'Неа';
 // alert(c);
 
-// let q1 = +prompt('Сколько будет 2-2? Ответы: 0, 2, 4.');
-// let q2 = +prompt('Сколько будет 6-4? Ответы: 0, 2, 4');
-// let q3 = +prompt('Сколько будет 8-4? Ответы: 0, 2, 4');
-// if (q1 === 0 && q2 === 2 && q3 === 4) {
-//     alert(`${6} баллов`)
-// }
-// else if (q1 === 0 && q2 === 2 || q1 === 0 && q3 === 4 || q2 === 2 && q3 === 4) {
-//     alert(`${4} баллов`)
-// }
-// else if (q1 === 0 || q2 === 2 || q3 === 4) {
-//     alert(`${2} балла`)
-// }
-// else {
-//     alert(`${0} баллов`)
-// }
+let q1 = +prompt('Сколько будет 2-2? Ответы: 0, 2, 4.');
+let q2 = +prompt('Сколько будет 6-4? Ответы: 0, 2, 4');
+let q3 = +prompt('Сколько будет 8-4? Ответы: 0, 2, 4');
+let c = 0
+if (q1 === 0) {
+    alert(`${с += 2} баллов`)
+}
+else {
+    alert(`${0}`)
+}
+if (q2 === 2) {
+    alert(`${с += 2} баллов`)
+}
+else {
+    alert(`${0} баллов`)
+}
+if (q3 === 4) {
+    alert(`${с += 2} балла`)
+}
+else {
+    alert(`${0} баллов`)
+}
 
-let day = +prompt('день');
-let mon = +prompt('месяц');
-let year = +prompt('год');
-let resDay = day + 1;
-let resMon = mon + 1;
-let resYear = year + 1;
-if (mon === 1 || mon === 3 || mon === 5 || mon === 7 || mon === 8 || mon === 10) {
-    if (day === 31) {
-        alert(`${day / day}.${resMon}.${year}`)
-    }
-    else if (day < 31) {
-        alert(`${resDay}.${mon}.${year}`)
-    }
-}
-if (mon === 12 && day === 31) {
-    alert(`${day / day}.${mon / mon}.${resYear}`)
-}
-if (mon === 4 || mon === 6 || mon === 9 || mon === 11) {
-    if (day === 30) {
-        alert(`${day / day}.${resMon}.${year}`)
-    }
-    else if (day < 30) {
-        alert(`${resDay}.${mon}.${year}`)
-    }
-}
-if (mon === 2) {
-    if (day === 29) {
-        if (year % 400 === 0 || year % 4 === 0 && year % 100 != 0) {
-            alert(`${day / day}.${resMon}.${year}`)
-        }
-    } else {
-        alert(`В високосный: ${resDay}.${mon}.${year}`)
-    }
-}
-if (mon === 2) {
-    if (day === 28) {
-        alert(`Не в високосный: ${day / day}.${resMon}.${year}`)
-    }
-}
+// let day = +prompt('день');
+// let mon = +prompt('месяц');
+// let year = +prompt('год');
+// let resDay = day + 1;
+// let resMon = mon + 1;
+// let resYear = year + 1;
+// if (mon === 1 || mon === 3 || mon === 5 || mon === 7 || mon === 8 || mon === 10) {
+//     if (day === 31) {
+//         alert(`${day / day}.${resMon}.${year}`)
+//     }
+//     else if (day < 31) {
+//         alert(`${resDay}.${mon}.${year}`)
+//     }
+// }
+// if (mon === 12 && day === 31) {
+//     alert(`${day / day}.${mon / mon}.${resYear}`)
+// }
+// if (mon === 4 || mon === 6 || mon === 9 || mon === 11) {
+//     if (day === 30) {
+//         alert(`${day / day}.${resMon}.${year}`)
+//     }
+//     else if (day < 30) {
+//         alert(`${resDay}.${mon}.${year}`)
+//     }
+// }
+// if (mon === 2) {
+//     if (day === 29) {
+//         if (year % 400 === 0 || year % 4 === 0 && year % 100 != 0) {
+//             alert(`${day / day}.${resMon}.${year}`)
+//         }
+//     } else {
+//         alert(`В високосный: ${resDay}.${mon}.${year}`)
+//     }
+// }
+// if (mon === 2) {
+//     if (day === 28) {
+//         alert(`Не в високосный: ${day / day}.${resMon}.${year}`)
+//     }
+// }
 
