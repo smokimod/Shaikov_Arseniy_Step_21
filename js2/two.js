@@ -110,25 +110,26 @@
 let q1 = +prompt('Сколько будет 2-2? Ответы: 0, 2, 4.');
 let q2 = +prompt('Сколько будет 6-4? Ответы: 0, 2, 4');
 let q3 = +prompt('Сколько будет 8-4? Ответы: 0, 2, 4');
-let c = 0
+count = 0;
 if (q1 === 0) {
-    alert(`${с += 2} баллов`)
+    count++
 }
 else {
-    alert(`${0}`)
+    alert('nea')
 }
 if (q2 === 2) {
-    alert(`${с += 2} баллов`)
+    count++
 }
 else {
-    alert(`${0} баллов`)
+    alert('nea')
 }
 if (q3 === 4) {
-    alert(`${с += 2} балла`)
+    count++
 }
 else {
-    alert(`${0} баллов`)
+    alert('nea')
 }
+alert(count)
 
 // let day = +prompt('день');
 // let mon = +prompt('месяц');
