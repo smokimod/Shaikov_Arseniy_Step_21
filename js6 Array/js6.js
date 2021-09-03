@@ -5,7 +5,7 @@ let pokupki = [
   { name: 'Fish', num: 3, status: 'Unbought' },
   { name: 'Pencil', num: 7, status: 'Bought' },
 ]
-
+//afaf
 
 //#1.1
 // pokupki.sort(function (a, b) {
