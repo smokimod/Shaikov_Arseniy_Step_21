@@ -1,7 +1,5 @@
-// #1
-// let a = +prompt('chislo1');
-// let b = +prompt('chislo2');
-// function getNum() {
+// // #1
+// function getNum(a, b) {
 //     if (a < b) {
 //         alert(`${-1}`)
 //     }
@@ -12,7 +10,7 @@
 //         alert(`${0}`)
 //     }
 // }
-// getNum()
+// getNum(2, 4)
 
 // #2
 // function factorial(num) {
@@ -24,7 +22,7 @@
 // function summa(num1, num2, num3) {
 //     return num1 + num2 + num3
 // }
-// document.write(1, 4, 6)
+// document.write(summa('1', '4', '6'))
 
 // #4
 // function summa(num1, num2) {
@@ -56,28 +54,17 @@
 
 // #6
 // function perfect(num1, num2) {
-//     let temp = 0;
-//     let flag = 0;
-//     let i = 1;
-//     for (num1 = num1; num1 <= num2; num1++) {
-//         for (i = 1; i < num1; i++) {
-//             if (num1 % i == 0)
-//                 temp += i;
+//     let res = [];
+//     for (let i = num1; i < num2; i++) {
+//         sum = 0;
+//         for (let n = 1; n <= i / 2; n++) {
+//             if (i % n === 0) sum += n;
 //         }
-//         if ((temp == num1) && (num1 != 0)) {
-//             if (flag < 1) {
-//                 document.write("Perfect numbers are: ");
-//                 flag = 1;
-//             }
-//             document.write(num1 + ", ");
-//         }
-//         temp = 0;
+//         if (i === sum) res.push(i);
 //     }
-//     if (flag == 0)
-//         document.write("There in no perfect number");
-
+//     return res;
 // }
-// perfect(1, 10000)
+// console.log(perfect(1, 1000));
 
 //#7
 // function time(hour, minute, sec) {
