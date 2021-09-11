@@ -66,7 +66,7 @@
 // }
 // console.log(perfect(1, 1000));
 
-//#7
+// #7
 // function time(hour, minute, sec) {
 //     if (minute === undefined) {
 //         minute = '00';
@@ -107,7 +107,7 @@
 // }
 // alert(time(13, 25, 56))
 
-//#9
+// #9
 // function time(sec) {
 //     let hour = Math.floor(sec / 60 / 60);
 //     let minute = Math.floor(sec / 60) - (hour * 60);;
@@ -117,7 +117,7 @@
 // }
 // alert(time(48356))
 
-//#10
+// #10
 // function time(hour, minute, sec, hourTwo, minuteTwo, secTwo) {
 //     let a = hour * 3600;
 //     let b = minute * 60;
