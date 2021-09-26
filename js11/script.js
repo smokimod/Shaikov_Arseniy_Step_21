@@ -1,7 +1,4 @@
 // #3
-// let btn = document.querySelector('#bot');
-// let btn1 = document.querySelector('#bot1');
-// let btn2 = document.querySelector('#bot2');
 // let txt = document.querySelector('#text');
 
 // btn.addEventListener("click", function () {
@@ -63,14 +60,9 @@
 ///////////////////////////////////////////////////////////////////////DZ///////////////////////////////////////
 
 // #1
-// let input = document.querySelector('#input1');
-// let reg = /[0-9]/g;
-// input.addEventListener('keydown', function () {
-//     input.value = input.value.replace(reg, '')
-// });
-// input.addEventListener('keyup', function () {
-//     input.value = input.value.replace(reg, '')
-// });
+// function getNum(event) {
+//     return (event.charCode >= 64 && event.charCode <= 91) || (event.charCode > 96 && event.charCode < 123)
+// };
 
 //#2
 // let modal = document.querySelector('#modal');
@@ -107,11 +99,10 @@
 // let block2 = document.querySelector('#yellow');
 // let block3 = document.querySelector('#green');
 // let value = 0;
-// block1.style.backgroundColor = 'grey';
-// block2.style.backgroundColor = 'grey';
-// block3.style.backgroundColor = 'grey';
 // function getShow() {
-
+//     block1.style.backgroundColor = 'grey';
+//     block2.style.backgroundColor = 'grey';
+//     block3.style.backgroundColor = 'grey';
 //     value++
 //     if (value === 1) {
 //         block1.style.backgroundColor = 'red';
