@@ -1,8 +1,8 @@
 // #1
-let item = document.querySelectorAll('a[href*="http://"]');
-item.forEach(function (e) {
-    e.style.borderBottom = '1px dashed black ';
-});
+// let item = document.querySelectorAll('a[href*="http://"]');
+// item.forEach(function (e) {
+//     e.style.borderBottom = '1px dashed black ';
+// });
 // №2
 // const list = document.querySelector('.tree');
 // list.addEventListener('click', (event) => {
@@ -27,71 +27,81 @@ item.forEach(function (e) {
 // })
 
 // #3
-let block = document.querySelector('#block');
-
-function getColor(event) {
-    if (event.ctrlKey) {
-        event.target.className = 'orange';
-    }
-    if (!event.ctrlKey) {
-        for (let child of block.childNodes) {
-            child.className = ''
-        }
-        event.target.className = 'orange';
-    }
-}
-
-block.addEventListener('click', getColor)
-
-//#4
-// code: 'ControlLeft'
-// 'KeyE'
-// 'KeyS'
-// let flag = false;
 // let block = document.querySelector('#block');
-// document.onkeydown = function (event) {
-//     if (event.code == 'ControlLeft') flag = true;
-//     if (event.code == 'KeyA' && flag) {
-//         let text = document.createElement('TEXTAREA');
-//         text.cols = "48";
-//         text.rows = "13";
-//         text.innerHTML = block.innerHTML;
-//         block.innerHTML = ''
-//         block.appendChild(text)
-//         flag = false;
+// let colorBibl = block.querySelectorAll('div');
+// start = ''
 
-//     }
-//     else if (event.code == 'ControlLeft') flag = true;
-//     if (event.code == 'KeyZ' && flag) {
-//         block = block.innerHTML
-//         flag = false;
-//     }
-
+// for (let i = 0; i < colorBibl.length; i++) {
+//     colorBibl[i].id = 'colorBibl' + [i];
 // }
 
+// function getColor(event) {
+//     if (event.ctrlKey && event.shiftKey == false) {
+//         for (let i = 0; i < colorBibl.length; i++) {
+//             if (colorBibl[i].id === event.target.id && colorBibl[i].className !== 'orange' && event.ctrlKey) {
+//                 colorBibl[i].className = 'orange';
+//                 start = i;
+//             } else if (colorBibl[i].id === event.target.id && colorBibl[i].className === 'orange' && event.ctrlKey) {
+//                 colorBibl[i].classNamer = '';
+//             }
+//         }
+//     }
+//     if (!event.ctrlKey && !event.shiftKey) {
+//         for (let i = 0; i < colorBibl.length; i++) {
+//             if (colorBibl[i].id === event.target.id && colorBibl[i].className !== 'orange') {
+//                 colorBibl[i].className = 'orange';
+//                 start = i;
+//                 console.log(start)
+//             } else if (colorBibl[i].className === 'orange') {
+//                 colorBibl[i].className = '';
+//             }
+//         }
+//     }
+//     if (event.shiftKey) {
+//         for (let i = 0; i < colorBibl.length; i++) {
+//             if (colorBibl[i].id === event.target.id) {
+//                 if (start > i) {
+//                     for (let j = i; j < start; j++) {
+//                         colorBibl[j].className = 'orange';
+//                     }
+//                 }
+//                 if (start < i) {
+//                     for (let j = i; j > start; j--) {
+//                         // console.log(j)
+//                         colorBibl[j].className = 'orange';
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// block.addEventListener('click', getColor)
 
+//#4
+// document.addEventListener("keydown", keyPress);
+// function keyPress(event) {
+//    if ((event.code === "KeyS" || event.code === "KeyE")) {
+//       let block = document.querySelector(".blockStyle");
+//       //заметка*через id nodeName=null
+//       if (event.code === "KeyE" && block.nodeName === "DIV" && event.ctrlKey) {
+//          event.preventDefault();
+//          let text = document.createElement("textarea");
+//          text.rows = 30;
+//          text.cols = 40;
+//          text.style.fontFamily = 'sans-serif'
+//          text.className = "blockStyle";
+//          text.textContent = block.textContent;
+//          block.replaceWith(text);
+//       }
+//       if (event.code === "KeyS" && block.nodeName === "TEXTAREA" && event.ctrlKey) {
+//          event.preventDefault();
+//          let newBlock = document.createElement("div");
+//          newBlock.className = "blockStyle";
+//          newBlock.textContent = block.textContent;
+//          block.replaceWith(newBlock);
+//       }
+//    }
+// }
 
 
 //#5
-// function sortingtable(event) {
-//     let target = event.target;
-//     if (target.dataset.type) {
-//         let numberColumm = target.cellIndex;//номер столбца на который ткнули
-//         let tableContent = Array.from(grid.rows).slice(1);//получение данных таблицы и приведении ее к массиву
-//         console.log('tableContent: ', tableContent);
-//     if (target.dataset.type == 'string'){//если строки, то сортируем строчно
-//         var sortRows = tableContent.sort((rowA, rowB) => rowA.cells[numberColumm].innerHTML >
-//         rowB.cells[numberColumm].innerHTML ? 1 : -1)
-
-//     }
-//     if (target.dataset.type == 'number'){//если числа, то сортируем как числвые значения
-//         var sortRows = tableContent.sort((rowA, rowB) => {
-//             return (rowA.cells[numberColumm].innerHTML - rowB.cells[numberColumm].innerHTML) }) 
-//     }
-//     grid.tBodies[0].append(...sortRows)//вставляем получившийся отсортированнй html
-
-// }
-//   }
-
-
-// grid.addEventListener('click', (event) => sortingtable(event))
