@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  background-image: linear-gradient(120deg, #fc354c, #0abfbc);
+  font-family: sans-serif;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.title,
+.forma {
+  display: flex;
+  min-height: 15vh;
+  justify-content: center;
+  align-items: center;
+}
+.remove {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.remove_btn {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: none;
+  font-family: sans-serif;
+  color: rgb(66, 65, 65);
+  padding: 0.4rem;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.cross_style {
+  color: #c065c0;
+  border: 1 solid;
+  padding: 0.5rem;
+  background-color: white;
+}
+.cross_style:hover {
+  background: #c065c0;
+  color: white;
+  border-radius: 5px;
+}
+.todo_input,
+.todo_button {
+  padding: 0.4rem;
+  border: none;
+  font-size: 1.6rem;
+  background: white;
+}
+.forma button {
+  color: #c065c0;
+  background: white;
+  cursor: pointer;
+}
+.forma button:hover {
+  background: #c065c0;
+  color: white;
+}
+.edit_btn,
+.delete_btn {
+  padding: 7px;
+  background: red;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+.todo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo_list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 5px auto;
+  background: white;
+  color: #000000;
+  display: flex;
+  font-size: 20px;
+  padding: 9px;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.todo li {
+  flex: 1;
+}
+.check_box {
+  width: 15px;
+  height: 30px;
+  margin-right: 10px;
+}
+.fall {
+  display: none;
+}
+.completedItem {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.input_text {
+  padding: 5px;
+  flex: 1;
+  font-size: 20px;
+}
+
+/* * {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .main_block {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(126, 126, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .head {
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    font-style: sans-serif;
+    color: rgb(110, 108, 108);
+    padding-top: 10px;
+  }
+  .card {
+    height: 300px;
+    width: 600px;
+    background-color: white;
+  }
+  .bl {
+    display: flex;
+    justify-content: center;
+  }
+  .input {
+    width: 400px;
+    height: 35px;
+    margin: 20px 0;
+    margin-right: 20px;
+    text-align: "center";
+    font-style: sans-serif;
+    font-size: 20px;
+  }
+  .btn {
+    height: 40px;
+    width: 40px;
+    margin: 20px 0;
+    background-color: rgb(126, 126, 252);
+    border: transparent;
+  }
+  .check {
+    display: flex;
+    flex-direction: column;
+    padding-left: 65px;
+  }
+  .radio {
+    margin: 10px 0;
+    
+  } */
