@@ -7,23 +7,23 @@ toDoButton.addEventListener('click', showList);
 toDolist.addEventListener("click", deleteItem);
 document.addEventListener('keydown', changeItem);
 cheked.addEventListener('click', deleteCheck);
+document.addEventListener('click', progress);
+document.addEventListener('click', spanAdd);
 
-
+let arr = [];
 function showList(event) {
-    event.preventDefault();
     const newTodoDiv = document.createElement('div');
     newTodoDiv.classList.add('todo');
     //li
     const liItem = document.createElement('li');
     liItem.textContent = toDoInput.value;
-    liItem.classList.add('todo_item');
+    // liItem.classList.add('todo_item');
     newTodoDiv.appendChild(liItem);
     if (toDoInput.value === "") {
         return null
     }
     const completeCheck = document.createElement('input');
     completeCheck.type = 'checkbox';
-    completeCheck.id = 'cl'
     //заметка* className не подходит т.к. он не возвразает массив классов
     completeCheck.classList.add('check_box')
     newTodoDiv.prepend(completeCheck);
@@ -38,15 +38,22 @@ function showList(event) {
     deleteButton.classList.add('delete_btn');
     newTodoDiv.appendChild(deleteButton);
     toDolist.appendChild(newTodoDiv);
-    toDoInput.value = ""
-    console.log(newTodoDiv)
+    toDoInput.value = "";
+    arr.push(newTodoDiv);
+    for (let a = 0; a < arr.length; a++) {
+        arr[a].id = 'arr' + [a];
+    }
 }
-//DELETE ITEM && CHECK 
+//DELETE ITEM && CHECK && EDIT
 function deleteItem(e) {
     const item = e.target;
     if (item.classList[0] === "delete_btn") {
-        const todo = item.parentElement;
-        todo.classList.add('fall');
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i].id === item.parentElement.id) {
+                arr[i].remove();
+                console.log(arr[i].id)
+            }
+        }
     }
     if (item.classList[0] === "check_box") {
         const todo = item.parentElement;
@@ -71,15 +78,14 @@ function changeItem(evt) {
         }
     }
 }
-
 //Delete cheked 
 function deleteCheck() {
     const arrCheck = document.querySelectorAll('.check_box');
-    console.log(arrCheck)
+
     for (let i = 0; i < arrCheck.length; i++) {
         const hiddeCheck = arrCheck[i];
         if (hiddeCheck.checked) {
-            hiddeCheck.parentNode.style.display = 'none'
+            hiddeCheck.parentNode.remove()
         }
     }
 }
@@ -90,3 +96,30 @@ function deleteCheck() {
 
 // console.log(typeof array); // объект
 // console.log(array); // [1, 2, 3]
+function progress() {
+    let checked = 0;
+    let selectBox = document.querySelectorAll("input[type='checkbox']");
+    selectBoxItem = selectBox.length;
+    let myBar = document.querySelector("#myBar");
+    let checks = document.querySelector('.todo_list');
+    let boxes = checks.querySelectorAll("input[type='checkbox']:checked");
+    checked = boxes.length
+    myBar.style.width = ((checked / selectBoxItem) * 100) + "%";
+}
+let boxLoop = document.querySelectorAll("input[type='checkbox']");
+boxLoop.forEach(function (box) {
+    box.addEventListener("change", function () {
+        progress()
+    });
+});
+// PROGRESS BAR SPAN ADD
+function spanAdd() {
+    let spanOne = document.querySelector('.spanOne');
+    let oneItem = document.querySelectorAll("input[type='checkbox']:checked");
+    oneChange = oneItem.length;
+    spanOne.textContent = (`${oneChange}`)
+    let spanTwo = document.querySelector('.spanTwo');
+    let twoItem = document.querySelectorAll("input[type='checkbox']");
+    twoChange = twoItem.length;
+    spanTwo.textContent = (`${twoChange}`);
+}
