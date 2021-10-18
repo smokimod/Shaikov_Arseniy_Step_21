@@ -1,0 +1,107 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 15px;
+}
+/* #1 */
+/* #main {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+}
+.block {
+    margin: 15px;
+}
+.button {
+    max-width: 470px;
+}
+.border {
+    border: solid 0.5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 10px 0;
+} */
+
+/* #3 */
+/* .block {
+    width: 400px;
+    height: 250px;
+    background-color: rgb(226, 196, 185);
+    
+    border: solid 1px;
+} */
+
+/* //#4 */
+/* #main {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50vh;
+    width: 100vw;
+    background-color: rgb(247, 218, 207);
+}
+#books {
+    display: flex;
+}
+#first_book,
+#second_book,
+#third_book {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(187, 223, 211);
+    border: solid 1px;
+    height: 500px;
+    width: 400px;
+    margin: 20px;
+}
+.first_image {
+    width: 400px;
+    height: 420px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://eloquentjavascript.net/img/cover.jpg);
+}
+.second_image {
+    width: 400px;
+    height: 420px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/I/71ip1mxZ8cL.jpg);
+}
+.third_image {
+    width: 400px;
+    height: 420px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1457542606l/25136217._SY475_.jpg);
+}
+.div_text {
+    margin: 10px;
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+#forma {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 20px;
+    border: solid 1px;
+    height: 500px;
+    width: 520px;
+}
+.forma_pad {
+    padding: 10px;
+}
+.el {
+    display: block !important;
+    height: 100px;
+    outline: solid 1px;
+    outline-offset: -10px;
+    background-color: burlywood;
+    font-size: 22px;
+    font-family: sans-serif;
+    padding: 15px;
+} */
