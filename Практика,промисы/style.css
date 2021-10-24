@@ -1,0 +1,32 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.block {
+    text-align: center;
+    margin: 100px 0px;
+}
+.value {
+    height: 50px;
+    width: 600px;
+    background: rgb(176, 177, 175);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 2px;
+    border: none;
+}
+.button {
+    height: 50px;
+    width: 100px;
+    background: rgb(176, 177, 175);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 2px;
+    border: none;
+}
+.display {
+    text-align: center;
+    font-family: sans-serif;
+}
