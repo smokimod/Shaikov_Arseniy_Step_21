@@ -5,7 +5,8 @@
 .main_block {
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .forma {
     background-color: antiquewhite;
@@ -24,6 +25,16 @@
 .button {
     width: 255px;
 }
-.films{
-    min-height: 200px;
+.films {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 300px;
+    min-height: 400px;
+}
+.divMovie {
+    height: 300px;
+    width: 300px;
+    border: solid 1;
+   
+    margin: 0 10px;
 }

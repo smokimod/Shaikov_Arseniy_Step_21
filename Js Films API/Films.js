@@ -1,20 +1,33 @@
 let title = document.querySelector('#title');
 let type = document.querySelector('#type');
 let button = document.querySelector('.button');
+let films = document.querySelector('.films');
 
+let page = 1
 let array = [];
-button.addEventListener('click', async function () {
-    let url = await fetch(`http://www.omdbapi.com/?apikey=6c457b54&s=${title.value}`)
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)
-            let nameValue = data['Search'][0]['Year']
-            console.log(nameValue)
-            let obj = {
-                name: data['Search'][1]['Year'],
-            }
-            console.log(obj)
 
+function createMovie() {
+    let creatMov = document.querySelector()
+}
+
+button.addEventListener('click', async function () {
+    let url = `http://www.omdbapi.com/?apikey=6c457b54&s=${title.value}&page=1&type=${type.value}`;
+    let response = await fetch(url);
+    let dataB = await response.json()
+        .then(data => {
+            showmovies(data.Search);
+            console.log(data);
         })
-        .catch(err => alert('Movie not found!'));
+        .catch(err => alert('Error!'));
 })
+function showmovies(data) {
+    data.forEach(movie => {
+        let divMovie = document.createElement('div');
+        divMovie.classList.add = 'divMovie';
+        divMovie.innerHTML = `
+      
+        
+        `
+    });
+
+}
