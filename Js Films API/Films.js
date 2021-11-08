@@ -13,8 +13,8 @@ let page = 1;
 button.addEventListener('click', () => {
 	let url = `http://www.omdbapi.com/?apikey=6c457b54&s=${title.value}&page=${page}&type=${type.value}`
 	fetch(url)
-		.then(dataB => dataB.json())
-		.then(dataB => {
+		.then(async dataB => await dataB.json())
+		.then(async dataB => {
 			console.log(dataB);
 			let d = Math.ceil(dataB.totalResults / 10);
 			totalPages = d;
