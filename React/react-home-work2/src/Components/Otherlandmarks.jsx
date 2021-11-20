@@ -1,6 +1,9 @@
 import React from "react";
+import { useParams } from "react-router";
 
-export const Otherland = (props) => {
+export const Otherland = () => {
+  const { id }= useParams();
+
   return (
     <div>
       <div>
@@ -12,6 +15,7 @@ export const Otherland = (props) => {
         расположены 12 стульев, соответствующие знакам зодиака. Вся скульптурная
         композиция представляет собой солнечные часы. Причем действующие! По ним
         можно сверять время.
+        <h1>{id}</h1>
       </div>
       <div>
         <h2> Этнографическая белорусская деревня </h2>К Могилёвскому зоосаду
@@ -33,5 +37,3 @@ export const Otherland = (props) => {
     </div>
   );
 };
-
- 

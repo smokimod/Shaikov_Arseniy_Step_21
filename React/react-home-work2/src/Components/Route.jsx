@@ -1,10 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import {CityInfo} from "./CityInfo";
-import {Landmark} from "./MainLandmark";
-import {Otherland} from "./Otherlandmarks";
-import {Photo} from "./Photo";
-
+import { CityInfo } from "./CityInfo";
+import { Landmark } from "./MainLandmark";
+import { Otherland } from "./Otherlandmarks";
+import { Photo } from "./Photo";
 
 export const Rou = () => {
   return (
@@ -28,12 +27,13 @@ export const Rou = () => {
         <Routes>
           <Route exact path="/" element={<CityInfo />}></Route>
           <Route exact path="/mainlandmark" element={<Landmark />}></Route>
-          <Route exact path="/otherlandmarks" element={<Otherland />}></Route>
+          <Route
+            exact
+            path="/otherlandmarks/:id" element={<Otherland />}></Route>
           <Route exact path="/photo" element={<Photo />}></Route>
         </Routes>
       </div>
       <hr></hr>
     </Router>
-   
   );
 };
