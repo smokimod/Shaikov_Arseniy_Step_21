@@ -1,9 +1,7 @@
-import React from "react";
-
-
+import { useParams } from "react-router-dom";
 export const Landmark = () => {
-
-
+  const { prodID } = useParams();
+  console.log(prodID);
   return (
     <div>
       Буйничское поле. Это известный мемориальный комплекс возле деревни
@@ -13,7 +11,7 @@ export const Landmark = () => {
       имена сотен воинов и ополченцев. В центре мемориала находится «Книга
       памяти». Под часовней расположен склеп для перезахоронения воинов, чьи
       останки до сих пор находят поисковые отряды
-     
+      <p>{prodID}</p>
     </div>
   );
 };
