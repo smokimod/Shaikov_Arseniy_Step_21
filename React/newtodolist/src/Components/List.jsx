@@ -3,12 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { InputAdd } from "../OtherComponents/InputAdd";
 import { useState } from "react";
 import { CreateElement } from "./CreateElement";
-import { useEffect } from "react";
 
-export const List =  () => {
+export const List = () => {
   const [item, setItem] = useState([]);
   const arrayOfTodo = (array) => {
-    setItem( (prev)  =>  [...prev, ...array]);
+    setItem(array);
   };
 
   return (
@@ -38,7 +37,11 @@ export const List =  () => {
       <div className="todo_container">
         <ul className="todo_list">
           {item.map((point, i) => (
-            <CreateElement key={Math.random(i)} item={point.item} />
+            <CreateElement
+              key={Math.random(i)}
+              item={point.item}
+              id={(Math.random() * 1000).toString}
+            />
           ))}
         </ul>
       </div>
