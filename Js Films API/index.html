@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main_block">
+        <div class="forma">
+            <label for="title">Title:<input type="text" id='title' name="title"></label>
+            <label for="type">Type:
+                <select name="type" id='type'>
+                    <option value="movie">Movie</option>
+                    <option value="series">Series</option>
+                    <option value="episode">Episode</option>
+
+                </select>
+            </label>
+            <button class="button">Search</button>
+        </div>
+
+
+        <div class="container">
+            <div class="films"></div>
+            <div class="buttoms"></div>
+        </div>
+        <div class="info"> </div>
+    </div>
+    <script src="Films.js"></script>
+</body>
+
+</html>
